@@ -31,7 +31,7 @@ ImageCropper.cropImage(imgUrl,
    }, function (err) { console.error(err); });
 ```
 
-or, if you are running on an environment that supports Promise in Ionic v3 & v4:
+## Ionic v3 & v4:
 
 ```js
 // callback function
