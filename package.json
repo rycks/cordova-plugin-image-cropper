@@ -1,0 +1,28 @@
+{
+  "name": "cordova-plugin-image-cropper",
+  "version": "1.0.0",
+  "description": "Crop an image in a Ionic/Cordova app",
+  "cordova": {
+    "id": "cordova-plugin-image-cropper",
+    "platforms": [
+      "android"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Riyaz0001/cordova-plugin-image-cropper.git"
+  },
+  "keywords": [
+    "cordova",
+    "ecosystem:cordova",
+    "cordova-android",
+    "image",
+    "image manipulation",
+    "crop",
+    "ionic",
+    "image crop",
+    "Cropper",
+    "Image Cropper"
+  ],
+  "license": "MIT"
+}

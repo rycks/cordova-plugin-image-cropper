@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+           id="cordova-plugin-image-cropper"
+      version="1.0.0">
+
+    <name>ImageCropperPlugin</name>
+    <description>
+        Crop an image in a Cordova/Ionic app
+    </description>
+    <license>MIT</license>
+
+    <engines>
+        <engine name="cordova-android" version=">=4.0.0" />
+    </engines>
+
+    <js-module src="www/imagecrop.js" name="ImageCropperPlugin">
+        <clobbers target="ImageCropper.cropImage" />
+    </js-module>
+
+    <!-- android -->
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="ImageCropperPlugin">
+                <param name="android-package" value="com.mrustudio.plugin.ImageCropperPlugin"/>
+                <!-- <param name="onload" value="true"/> -->
+            </feature>
+        </config-file>
+
+        <!-- Image Cropper Library -->
+        <framework src="com.theartofdev.edmodo:android-image-cropper:2.8.+" />
+        
+        <!-- Add CropImageActivity -->
+        <config-file target="AndroidManifest.xml" parent="/manifest/application">
+            <activity android:name="com.theartofdev.edmodo.cropper.CropImageActivity" android:theme="@style/Base.Theme.AppCompat"/>
+        </config-file>
+
+        <config-file target="AndroidManifest.xml" parent="/manifest">
+            <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+            <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+        </config-file>
+
+        <source-file src="src/android/ImageCropperPlugin.java" target-dir="src/com/mrustudio/plugin" />
+    </platform>
+</plugin>
