@@ -48,11 +48,10 @@ public class ImageCropperPlugin extends CordovaPlugin {
           this.callbackContext = callbackContext;
 
           cordova.setActivityResultCallback(this);
-          CropImage.activity(this.inputUri)
-                //   .setActivityMenuIconColor(Color.GREEN)
-                //   .setAllowRotation(true)
-                //   .setActivityTitle("Edit Image")
-                  .start(cordova.getActivity());
+          mCropImageView.setImageUriAsync(this.inputUri);
+        // old code
+        //   CropImage.activity(this.inputUri)
+        //           .start(cordova.getActivity());
 
           return true;
       }
