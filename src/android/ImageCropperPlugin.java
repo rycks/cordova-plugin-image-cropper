@@ -48,10 +48,10 @@ public class ImageCropperPlugin extends CordovaPlugin {
           this.callbackContext = callbackContext;
 
           cordova.setActivityResultCallback(this);
-          cropImageView.setImageUriAsync(this.inputUri);
+        //   cropImageView.setImageUriAsync(this.inputUri);
         // old code
-        //   CropImage.activity(this.inputUri)
-        //           .start(cordova.getActivity());
+          CropImage.activity(this.inputUri)
+                  .start(cordova.getActivity());
 
           return true;
       }
