@@ -27,11 +27,11 @@
         </config-file>
 
         <!-- Image Cropper Library -->
-        <framework src="com.theartofdev.edmodo:android-image-cropper:2.8.+" />
+        <framework src="com.vanniktech:android-image-cropper:4.3.3" />
         
         <!-- Add CropImageActivity -->
         <config-file target="AndroidManifest.xml" parent="/manifest/application">
-            <activity android:name="com.theartofdev.edmodo.cropper.CropImageActivity" android:theme="@style/Base.Theme.AppCompat"/>
+            <activity android:name="com.canhub.cropper.CropImageActivity" android:theme="@style/Base.Theme.AppCompat"/>
         </config-file>
 
         <config-file target="AndroidManifest.xml" parent="/manifest">
