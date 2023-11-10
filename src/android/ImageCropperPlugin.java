@@ -10,8 +10,11 @@ import android.os.Environment;
 // import android.graphics.Color;
 
 // import com.yalantis.ucrop.UCrop;
-import com.theartofdev.edmodo.cropper.CropImage;
+// import com.theartofdev.edmodo.cropper.CropImage;
 // import com.theartofdev.edmodo.cropper.CropImageView;
+//2023 update -> https://github.com/CanHub/Android-Image-Cropper
+import com.canhub.cropper.CropImage;
+import com.canhub.cropper.CropImageActivity;
 
 import org.apache.cordova.CallbackContext;
 import org.apache.cordova.CordovaPlugin;
