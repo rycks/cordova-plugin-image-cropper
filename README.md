@@ -57,3 +57,6 @@ ImageCropper.cropImage(imgUrl,
 ## License
 
 MIT © [Riyaz](https://github.com/Riyaz0001)
+
+## Try to update - 2023-11-01
+
