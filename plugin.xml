@@ -27,7 +27,7 @@
         </config-file>
 
         <!-- Image Cropper Library -->
-        <framework src="com.vanniktech:android-image-cropper:4.3.3" />
+        <framework src="com.vanniktech:android-image-cropper:4.5.0" />
         
         <!-- Add CropImageActivity -->
         <config-file target="AndroidManifest.xml" parent="/manifest/application">
